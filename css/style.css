@@ -132,7 +132,8 @@ nav a:hover {
 
 .boton,
 .boton-contacto,
-.boton-proyecto {
+.boton-proyecto,
+.boton-cv {
     display: inline-block;
     background-color: #00aaff;
     color: white;
@@ -146,8 +147,21 @@ nav a:hover {
 
 .boton:hover,
 .boton-contacto:hover,
-.boton-proyecto:hover {
+.boton-proyecto:hover,
+.boton-cv:hover {
     opacity: .8;
+}
+
+.boton-cv {
+    background-color: transparent;
+    border: 2px solid #00aaff;
+}
+
+.botones-hero {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
@@ -351,9 +365,15 @@ footer p {
 
     .boton,
     .boton-contacto,
-    .boton-proyecto {
+    .boton-proyecto,
+    .boton-cv {
         width: 100%;
         max-width: 300px;
+    }
+
+    .botones-hero {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
